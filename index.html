@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #191718;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .text0 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+
+        }
+
+        .text1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+
+        }
+
+        .text2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+
+        .aside {
+            background-color: #ffffff;
+            text-align: center;
+            font-family: "Roboto";
+            font-style: normal;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            background-color: #ffff;
+            color: #030303;
+            font-size: 12px;
+            padding: 15px;
+            border: 1px;
+            border-top-style: solid;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+
+    <div class="row">
+        <div class="col-1 col-s-3 menu" style="padding: 0;">
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>News</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-9 col-s-12">
+            <div class="aside">
+                <img src="./img/brandimg.png" alt="Girl in a jacket" width="310" height="122">
+                <div class="heading-text" style="background-color: #EFEFEF;">
+                    <div class="text0">
+                        <p style="font-size: 18px;color: #000000;font-weight: 700px;line-height:21px">Lorem ipsum dolor sit
+                            asmet?</p>
+                    </div>
+                    <div class="text1">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat.
+                            Vestibulum auctor pellentesque sem, eu <br>
+                            posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis
+                            sodales,
+                            augue justo tristique nulla, sed lacinia <br>
+                            ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et
+                            nisi
+                            eu justo eleifend convallis. Quisque <br>
+                            suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu.
+                            Donec
+                            vulputate odio neque, sed semper <br>
+                            turpis pellentesque a.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-4 col-s-4">
+                    <h1 style="font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    ">Lorem ipsum dolor sit </h1>
+                    <div style="display: flex;">
+                        <img src="./img/cssimg.png" alt="" width="128" height="128">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-s-4">
+                    <h1 style="font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    ">Lorem ipsum dolor sit </h1>
+                    <div style="display: flex;">
+                        <img src="./img/htmlimg.png" alt="" width="128" height="128">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                    </div>
+                </div>
+                <div class="col-4 col-s-4">
+                    <h1 style="font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    ">Lorem ipsum dolor sit </h1>
+                    <div style="display: flex;">
+                        <img src="./img/urlimg.png" alt="" width="128" height="128">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-1"></div>
+            <div class="footer">
+                <p>copyright © 2021</p>
+            </div>
+        </div>
+
+</body>
+</html>
